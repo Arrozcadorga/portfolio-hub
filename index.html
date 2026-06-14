@@ -1,25 +1,127 @@
-<div class="container">
-        <h2>Meus Projetos Integrados (GitHub)</h2>
-        <p>Esta plataforma gerencia a exibição dos meus projetos, respeitando as políticas de privacidade configuradas no GitHub.</p>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu PortfolioHUB</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f4f4f9; 
+            color: #333; 
+            margin: 0; 
+            padding: 0; 
+        }
+        header { 
+            text-align: center; 
+            padding: 30px 20px; 
+            background: #0076ff; 
+            color: white; 
+        }
+        header h1 { 
+            margin: 0; 
+            font-size: 2.5em; 
+        }
+        header p { 
+            margin: 5px 0 0 0; 
+            opacity: 0.9; 
+        }
+        main { 
+            max-width: 800px; 
+            margin: 30px auto; 
+            padding: 0 20px; 
+        }
+        .container { 
+            background: white; 
+            padding: 25px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+        }
+        .container h2 { 
+            margin-top: 0; 
+            color: #0076ff; 
+        }
+        .project-card { 
+            border-left: 5px solid #0076ff; 
+            background: #f9f9f9; 
+            padding: 15px; 
+            margin: 20px 0; 
+            border-radius: 4px; 
+            position: relative;
+        }
+        .badge { 
+            font-size: 0.75em; 
+            color: white; 
+            padding: 3px 8px; 
+            border-radius: 3px; 
+            font-weight: bold;
+            float: right;
+        }
+        .badge-private { background: #ff9800; }
+        .badge-academic { background: #607d8b; }
         
-        <!-- Projeto do Cartório -->
-        <div class="project-card" style="border-left-color: #ff9800;">
-            <h3>Projeto: Automação de Averbações no Cartório <span style="font-size: 0.7em; background: #ff9800; color: white; padding: 2px 6px; border-radius: 3px; float: right;">PRIVADO / CONFIDENCIAL</span></h3>
-            <p>Sistema focado na automação de processos internos e registros de averbações cartoriais. Código-fonte restrito por motivos de segurança e sigilo de dados.</p>
-            <a href="#" style="color: #777; cursor: not-allowed; text-decoration: none;">🔒 Acesso Restrito ao Desenvolvedor</a>
-        </div>
+        .project-link { 
+            display: inline-block; 
+            margin-top: 10px; 
+            text-decoration: none; 
+            color: #777; 
+            font-size: 0.9em; 
+            cursor: not-allowed;
+        }
+        footer { 
+            text-align: center; 
+            padding: 20px; 
+            margin-top: 50px; 
+            font-size: 0.85em; 
+            color: #777; 
+            background: #eef2f5; 
+        }
+    </style>
+</head>
+<body>
 
-        <!-- Anotações Banco de Dados -->
-        <div class="project-card" style="border-left-color: #607d8b;">
-            <h3>Anotações: Banco de Dados <span style="font-size: 0.7em; background: #607d8b; color: white; padding: 2px 6px; border-radius: 3px; float: right;">PRIVADO</span></h3>
-            <p>Repositório privado para fins de organização pessoal contendo resumos, scripts SQL e materiais das aulas teóricas e práticas.</p>
-            <a href="#" style="color: #777; cursor: not-allowed; text-decoration: none;">🔒 Acesso Restrito</a>
-        </div>
+    <!-- Cabeçalho Principal da Plataforma -->
+    <header>
+        <h1>PortfolioHUB</h1>
+        <p>Central de Projetos e Portfólios Digitais</p>
+    </header>
 
-        <!-- Anotações Introdução à Computação -->
-        <div class="project-card" style="border-left-color: #607d8b;">
-            <h3>Anotações: Introdução à Computação <span style="font-size: 0.7em; background: #607d8b; color: white; padding: 2px 6px; border-radius: 3px; float: right;">PRIVADO</span></h3>
-            <p>Repositório privado contendo o histórico de estudos, conceitos de hardware, sistemas operacionais e lógica matemática.</p>
-            <a href="#" style="color: #777; cursor: not-allowed; text-decoration: none;">🔒 Acesso Restrito</a>
+    <!-- Área de Conteúdo Principal (Main) -->
+    <main>
+        <div class="container">
+            <h2>Meus Projetos Integrados (GitHub)</h2>
+            <p>Esta plataforma gerencia a exibição dos meus projetos, respeitando rigorosamente as políticas de privacidade e visibilidade configuradas no GitHub.</p>
+            
+            <!-- Projeto do Cartório -->
+            <div class="project-card" style="border-left-color: #ff9800;">
+                <span class="badge badge-private">PRIVADO / CONFIDENCIAL</span>
+                <h3>Projeto: Automação de Averbações no Cartório</h3>
+                <p>Sistema desenvolvido para automação de rotinas internas, triagem de documentos e registros de averbações cartoriais. Código-fonte restrito devido ao sigilo de dados e regras de negócio sensíveis.</p>
+                <span class="project-link">🔒 Acesso Restrito ao Desenvolvedor</span>
+            </div>
+
+            <!-- Anotações Banco de Dados -->
+            <div class="project-card" style="border-left-color: #607d8b;">
+                <span class="badge badge-academic">PRIVADO</span>
+                <h3>Anotações: Banco de Dados</h3>
+                <p>Repositório privado utilizado para fins de organização estudantil. Contém resumos de aulas, modelagens de dados (DER/MER) e scripts de testes em SQL.</p>
+                <span class="project-link">🔒 Acesso Restrito</span>
+            </div>
+
+            <!-- Anotações Introdução à Computação -->
+            <div class="project-card" style="border-left-color: #607d8b;">
+                <span class="badge badge-academic">PRIVADO</span>
+                <h3>Anotações: Introdução à Computação</h3>
+                <p>Espaço privado de armazenamento de materiais acadêmicos, cobrindo o histórico da computação, arquitetura de computadores, sistemas numéricos e lógica fundamental.</p>
+                <span class="project-link">🔒 Acesso Restrito</span>
+            </div>
         </div>
-    </div>
+    </main>
+
+    <!-- Rodapé com Informações de Implantação -->
+    <footer>
+        <p>PortfolioHUB © 2026 - Implantação, Gestão de Usuários e Segurança da Informação</p>
+    </footer>
+
+</body>
+</html>
